@@ -1,0 +1,2 @@
+SELECT CASE WHEN 
+  FROM poptbl END;
