@@ -6,3 +6,6 @@
 
 SQLファイル実行
   postgres=# \i ディレクトリ/ファイル名
+
+poptblにsexカラム追加
+  ALTER TABLE poptbl ADD COLUMN Sex varchar(50) null;

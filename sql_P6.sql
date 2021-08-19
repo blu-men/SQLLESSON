@@ -1,7 +1,5 @@
-SELECT CASE WHEN population < 100 THEN '01'
-            WHEN population >= 100 AND population < 200 THEN '02'
-            WHEN population >= 200 AND population < 300 THEN '03'
-            WHEN population >= 300 THEN '04'
-        ELSE NULL END AS pop_class,
-        COUNT(*) AS cnt
-  FROM poptbl;
+SELECT pref_name,
+    SUM( CASE WHEN sex = '1' THEN population ELSE 0 END ) AS cnt_m,
+    SUM( CASE WHEN sex = '2' THEN population ELSE 0 END ) AS cnt_f,
+  FROM poptbl
+GROUP BY pref_name;
