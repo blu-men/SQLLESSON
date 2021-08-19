@@ -1,1 +1,1 @@
-SELECT shohin_bunrui, AVG(hanbai_tanka) FROM shohin GROUP BY shohin_bunrui HAVING AVG(hanbai_tanka) >= 2500;
+SELECT shohin_id, shohin_mei, hanbai_tanka, shiire_tanka FROM shohin ORDER BY hanbai_tanka;
