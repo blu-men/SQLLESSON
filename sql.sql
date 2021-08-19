@@ -1,1 +1,1 @@
-SELECT SUM(hanbai_tanka) FROM shohin;
+SELECT AVG(hanbai_tanka) FROM shohin;
