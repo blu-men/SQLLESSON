@@ -1,1 +1,1 @@
-SELECT SUM(shiire_tanka),SUM(hanbai_tanka) FROM shohin;
+SELECT shiire_tanka, COUNT(*) FROM shohin GROUP BY shiire_tanka;
