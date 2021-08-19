@@ -1,1 +1,1 @@
-SELECT shiire_tanka, COUNT(*) FROM shohin WHERE shohin_bunrui = '衣服' GROUP BY shiire_tanka;
+SELECT shohin_bunrui, COUNT(*) FROM shohin GROUP BY shohin_bunrui HAVING COUNT(*) = 2;
