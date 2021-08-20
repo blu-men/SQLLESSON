@@ -1,1 +1,2 @@
-SELECT shohin_id, shohin_mei, hanbai_tanka, shiire_tanka FROM shohin ORDER BY hanbai_tanka;
+SELECT shohin_bunrui, SUM(hanbai_tanka), SUM(shiire_tanka) FROM shohin GROUP BY shohin_bunrui 
+HAVING SUM(hanbai_tanka) > SUM(shiire_tanka) * 1.5;
