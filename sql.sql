@@ -1,1 +1,6 @@
-DELETE FROM shohin WHERE hanbai_tanka >= 4000;
+create TABLE items (
+id SERIAL NOT NULL PRIMARY KEY,
+name varchar(30),
+price int,
+quantity int
+);
