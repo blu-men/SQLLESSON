@@ -1,5 +1,5 @@
 起動
-  postgres -D /usr/local/var/postgres
+  	
 
 対話型
   psql -d {DB name}
