@@ -1,1 +1,1 @@
-select count(*) from shohin;
+select shohin_bunrui, count(*) from shohin group by shohin_bunrui HAVING count(*) = 2;
