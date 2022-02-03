@@ -1,1 +1,1 @@
-select shohin_id, shohin_mei, hanbai_tanka, shiire_tanka from shohin order by hanbai_tanka;
+UPDATE shohin set hanbai_tanka = hanbai_tanka * 10 where shohin_bunrui = 'キッチン用品';
