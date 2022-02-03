@@ -1,1 +1,1 @@
-UPDATE shohin set hanbai_tanka = hanbai_tanka * 10 where shohin_bunrui = 'キッチン用品';
+UPDATE shohin set torokubi = null where shohin_id = '0008';
